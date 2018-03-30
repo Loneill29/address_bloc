@@ -125,7 +125,7 @@ def view_entry
   entry_number = gets.chomp.to_i
 
   if entry_number < @address_book.entries.count
-    puts @address_book.entries[selection]
+    puts @address_book.entries[entry_number]
     puts "Press enter to return to the main menu"
     gets.chomp
     system "clear"
